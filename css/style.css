@@ -559,8 +559,32 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-\[45px\] {
+  height: 45px;
+}
+
+.h-\[25px\] {
+  height: 25px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[45px\] {
+  width: 45px;
+}
+
+.w-\[25px\] {
+  width: 25px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .items-start {
@@ -622,4 +646,18 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
 }

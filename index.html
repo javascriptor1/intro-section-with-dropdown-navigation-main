@@ -26,17 +26,17 @@
     </style>
   </head>
   <body>
-    <header class="flex p-8 gap-12">
-      <div>
-        <img src="images/logo.svg" alt="snap logo" />
+    <header class="flex p-8 gap-12 items-center">
+      <div class="w-full">
+        <img src="images/logo.svg" alt="snap logo" class="" />
       </div>
-      <nav class="">
+      <nav class="hidden lg:block">
         <ul class="flex gap-8">
-          <div class="flex items-baseline gap-1">
+          <div class="flex items-baseline gap-1 hover:cursor-pointer">
             <a href="">Features </a
             ><img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
           </div>
-          <div class="flex items-baseline gap-1">
+          <div class="flex items-baseline gap-1 hover:cursor-pointer">
             <a href="">Company </a
             ><img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
           </div>
@@ -44,10 +44,17 @@
           <a href="">About</a>
         </ul>
       </nav>
-      <ul class="flex ml-auto gap-8">
+      <ul class="ml-auto gap-8 hidden lg:flex">
         <a href="">Login</a>
         <a href="">Register</a>
       </ul>
+      <div class="hover:cursor-pointer">
+        <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#151515" fill-rule="evenodd">
+            <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+          </g>
+        </svg>
+      </div>
     </header>
 
     <div>
