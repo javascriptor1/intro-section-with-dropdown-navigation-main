@@ -555,12 +555,24 @@ video {
   margin-top: 1rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .items-center {
@@ -597,6 +609,14 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-MediumGray {
@@ -663,6 +683,10 @@ video {
     margin-bottom: 3rem;
   }
 
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -675,6 +699,78 @@ video {
     display: none;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
+  .lg\:h-\[650px\] {
+    height: 650px;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .lg\:max-h-\[250px\] {
+    max-height: 250px;
+  }
+
+  .lg\:max-h-\[450px\] {
+    max-height: 450px;
+  }
+
+  .lg\:max-h-\[500px\] {
+    max-height: 500px;
+  }
+
+  .lg\:max-h-\[475px\] {
+    max-height: 475px;
+  }
+
+  .lg\:max-h-\[485px\] {
+    max-height: 485px;
+  }
+
+  .lg\:max-h-\[488px\] {
+    max-height: 488px;
+  }
+
+  .lg\:max-h-\[495px\] {
+    max-height: 495px;
+  }
+
+  .lg\:min-h-\[650px\] {
+    min-height: 650px;
+  }
+
+  .lg\:min-h-full {
+    min-height: 100%;
+  }
+
+  .lg\:min-h-\[400px\] {
+    min-height: 400px;
+  }
+
+  .lg\:min-h-\[600px\] {
+    min-height: 600px;
+  }
+
+  .lg\:min-h-\[500px\] {
+    min-height: 500px;
+  }
+
+  .lg\:min-h-\[250px\] {
+    min-height: 250px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -683,12 +779,36 @@ video {
     width: 75%;
   }
 
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
   }
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:p-8 {

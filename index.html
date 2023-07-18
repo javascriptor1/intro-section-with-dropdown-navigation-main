@@ -27,7 +27,7 @@
   </head>
   <body>
     <header class="flex p-4 pt-8 lg:p-8 lg:gap-12 items-center justify-between">
-      <div >
+      <div>
         <img src="images/logo.svg" alt="snap logo" class="" />
       </div>
       <nav class="hidden lg:flex">
@@ -44,9 +44,11 @@
           <a href="">About</a>
         </ul>
       </nav>
-      <ul class="ml-auto gap-8 hidden lg:flex text-MediumGray font-bold ">
+      <ul class="ml-auto gap-8 hidden lg:flex text-MediumGray font-bold">
         <a href="">Login</a>
-        <a href="" class="border-MediumGray border-2 rounded-lg py-2 px-4 -my-2">Register</a>
+        <a href="" class="border-MediumGray border-2 rounded-lg py-2 px-4 -my-2"
+          >Register</a
+        >
       </ul>
       <div class="hover:cursor-pointer lg:hidden">
         <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -58,25 +60,34 @@
     </header>
 
     <main class="lg:flex lg:flex-row-reverse lg:px-32 lg:py-20">
-      <div class="lg:w-1/2">
+      <div class="lg:w-[40%] lg:max-h-[495px]">
         <picture>
           <source
-            media="(mind-width:1024px)"
+            media="(min-width:1024px)"
             srcset="images/image-hero-desktop.png"
           />
-          <img src="images/image-hero-mobile.png" alt="hero image" />
+          <img
+            src="images/image-hero-mobile.png"
+            alt="hero image"
+            class="lg:h-full lg:w-full"
+          />
         </picture>
       </div>
-      <section class="p-8 text-center lg:text-left lg:w-1/2">
-        <h1 class="text-3xl font-bold lg:text-6xl lg:mb-12">Make <br class="hidden lg:block">remote work</h1>
+      <section class="p-8 text-center lg:text-left lg:w-[60%]">
+        <h1 class="text-3xl font-bold lg:text-6xl lg:mb-12 lg:mt-8">
+          Make <br class="hidden lg:block" />remote work
+        </h1>
         <p class="mt-4 mb-8 lg:mb-12 lg:w-[75%] text-MediumGray">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <a href="" class="bg-black text-white rounded-xl py-2 px-4 lg:py-3 lg:px-6 font-bold">
+        <a
+          href=""
+          class="bg-black text-white rounded-xl py-2 px-4 lg:py-3 lg:px-6 font-bold"
+        >
           Learn more</a
         >
-        <div class="flex gap-4 mt-16">
+        <div class="flex gap-4 lg:gap-8 mt-28">
           <div>
             <img src="images/client-databiz.svg" alt="client-databiz" />
           </div>
