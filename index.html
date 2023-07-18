@@ -26,12 +26,12 @@
     </style>
   </head>
   <body>
-    <header class="flex p-8 gap-12 items-center">
-      <div class="w-full">
+    <header class="flex p-4 pt-8 lg:p-8 lg:gap-12 items-center justify-between">
+      <div >
         <img src="images/logo.svg" alt="snap logo" class="" />
       </div>
-      <nav class="hidden lg:block">
-        <ul class="flex gap-8">
+      <nav class="hidden lg:flex">
+        <ul class="flex gap-8 text-MediumGray font-bold">
           <div class="flex items-baseline gap-1 hover:cursor-pointer">
             <a href="">Features </a
             ><img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
@@ -44,9 +44,9 @@
           <a href="">About</a>
         </ul>
       </nav>
-      <ul class="ml-auto gap-8 hidden lg:flex">
+      <ul class="ml-auto gap-8 hidden lg:flex text-MediumGray font-bold ">
         <a href="">Login</a>
-        <a href="">Register</a>
+        <a href="" class="border-MediumGray border-2 rounded-lg py-2 px-4 -my-2">Register</a>
       </ul>
       <div class="hover:cursor-pointer lg:hidden">
         <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@
     </header>
 
     <main class="lg:flex lg:flex-row-reverse lg:px-32 lg:py-20">
-      <div>
+      <div class="lg:w-1/2">
         <picture>
           <source
             media="(mind-width:1024px)"
@@ -67,18 +67,22 @@
           <img src="images/image-hero-mobile.png" alt="hero image" />
         </picture>
       </div>
-      <section class="p-8 text-center lg:text-left">
-        <h1 class="text-3xl font-bold">Make remote work</h1>
-        <p class="mt-4 mb-8">
+      <section class="p-8 text-center lg:text-left lg:w-1/2">
+        <h1 class="text-3xl font-bold lg:text-6xl lg:mb-12">Make <br class="hidden lg:block">remote work</h1>
+        <p class="mt-4 mb-8 lg:mb-12 lg:w-[75%] text-MediumGray">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <a href="" class="bg-black text-white rounded-xl py-2 px-4 font-bold">
+        <a href="" class="bg-black text-white rounded-xl py-2 px-4 lg:py-3 lg:px-6 font-bold">
           Learn more</a
         >
         <div class="flex gap-4 mt-16">
-          <div><img src="images/client-databiz.svg" alt="client-databiz" /></div>
-          <div><img src="images/client-audiophile.svg" alt="client-audiophile" /></div>
+          <div>
+            <img src="images/client-databiz.svg" alt="client-databiz" />
+          </div>
+          <div>
+            <img src="images/client-audiophile.svg" alt="client-audiophile" />
+          </div>
           <div><img src="images/client-meet.svg" alt="client-meet" /></div>
           <div><img src="images/client-maker.svg" alt="client-maker" /></div>
         </div>
