@@ -48,7 +48,7 @@
         <a href="">Login</a>
         <a href="">Register</a>
       </ul>
-      <div class="hover:cursor-pointer">
+      <div class="hover:cursor-pointer lg:hidden">
         <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
           <g fill="#151515" fill-rule="evenodd">
             <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
@@ -57,29 +57,39 @@
       </div>
     </header>
 
-    <div>
-      <h1 class="text-3xl">Make remote work</h1>
-      <p>
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <a href="">Learn more</a>
-      <div class="flex">
-        <img src="images/client-databiz.svg" alt="client-databiz" /><img
-          src="images/client-audiophile.svg"
-          alt="client-audiophile"
-        /><img src="images/client-meet.svg" alt="client-meet" /><img
-          src="images/client-maker.svg"
-          alt="client-maker"
-        />
+    <main class="lg:flex lg:flex-row-reverse lg:px-32 lg:py-20">
+      <div>
+        <picture>
+          <source
+            media="(mind-width:1024px)"
+            srcset="images/image-hero-desktop.png"
+          />
+          <img src="images/image-hero-mobile.png" alt="hero image" />
+        </picture>
       </div>
-    </div>
+      <section class="p-8 text-center lg:text-left">
+        <h1 class="text-3xl font-bold">Make remote work</h1>
+        <p class="mt-4 mb-8">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="" class="bg-black text-white rounded-xl py-2 px-4 font-bold">
+          Learn more</a
+        >
+        <div class="flex gap-4 mt-16">
+          <div><img src="images/client-databiz.svg" alt="client-databiz" /></div>
+          <div><img src="images/client-audiophile.svg" alt="client-audiophile" /></div>
+          <div><img src="images/client-meet.svg" alt="client-meet" /></div>
+          <div><img src="images/client-maker.svg" alt="client-maker" /></div>
+        </div>
+      </section>
+    </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="#">MKF</a>
+    </footer>
   </body>
 </html>
