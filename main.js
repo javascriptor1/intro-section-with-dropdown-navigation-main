@@ -8,26 +8,26 @@ const closeButton = document.querySelector("#close-button");
 // grab feature and company mobile divs for mobile active state
 const featureDiv = document.querySelector("#feature-mobile");
 const companyDiv = document.querySelector("#company-mobile");
-const featureMenuMobile = document.querySelector('#feature-menu-mobile')
-const companyMenuMobile = document.querySelector('#company-menu-mobile')
-
+const featureMenuMobile = document.querySelector("#feature-menu-mobile");
+const companyMenuMobile = document.querySelector("#company-menu-mobile");
 
 hamburgerMenu.addEventListener("click", () => {
-  mobileMenu.classList.remove("hidden");
-  hamburgerMenu.classList.add("hidden");
-  overlay.classList.remove("hidden");
+  toggleMenu();
 });
 
 closeButton.addEventListener("click", () => {
-  mobileMenu.classList.add("hidden");
-  hamburgerMenu.classList.remove("hidden");
-  overlay.classList.add("hidden");
+  toggleMenu();
 });
 
+featureDiv.addEventListener("click", () => {
+  featureMenuMobile.classList.toggle("hidden");
+});
+companyDiv.addEventListener("click", () => {
+  companyMenuMobile.classList.toggle("hidden");
+});
 
-featureDiv.addEventListener('click',()=>{
-    featureMenuMobile.classList.toggle('hidden')
-})
-companyDiv.addEventListener('click',()=>{
-    companyMenuMobile.classList.toggle('hidden')
-})
+function toggleMenu() {
+  mobileMenu.classList.toggle("hidden");
+  hamburgerMenu.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
+}
