@@ -10,14 +10,28 @@
   transform: rotate(180deg);
 }
 
-.feature:hover   #company-menu {
-    display: block;
+.feature:hover #company-menu {
+  display: block;
 }
-.feature:hover   #feature-menu {
-    display: block;
+.feature:hover #feature-menu {
+  display: block;
 }
 
 #company-menu,
 #feature-menu {
   box-shadow: 1px 5px 8px 0px #b8b5b5;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+  
+}
+
+/* TROUBLESHOOTING CSS */
