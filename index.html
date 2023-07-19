@@ -25,7 +25,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header class="flex p-4 pt-8 lg:p-8 lg:gap-12 items-start justify-between">
       <div>
         <img src="images/logo.svg" alt="snap logo" class="" />
@@ -117,11 +117,11 @@
           </g>
         </svg>
       </div>
-      <!-- OVERLAY LAYER HERE  -->
+      <!-- * OVERLAY LAYER HERE  -->
       <div id="overlay" class="hidden overlay"></div>
       <!-- *--------------------- mobile Menu ------------------------- -->
       <div
-        class="bg-white text-Verydarkblue fixed top-0 right-0 bottom-0 w-[300px] p-8 pt-16 hidden h-full"
+        class="bg-white text-Verydarkblue absolute top-0 right-0 w-[300px] p-8 pt-16 hidden min-h-screen"
         id="mobile-menu"
       >
         <!-- *icon -------------- Close button ----------------------- -->
@@ -138,8 +138,13 @@
           </svg>
         </div>
         <ul class="flex flex-col text-2xl gap-4 mr-[-100px]">
-          <div class="flex justify-between items-baseline gap-4 w-[135px]">
-            <li><a href="">Features</a></li>
+          <!-- * ------------------ Feature Div here ------------------------- -->
+
+          <div
+            class="flex justify-between items-baseline gap-4 w-[135px] cursor-pointer"
+            id="feature-mobile"
+          >
+            <li>Features</li>
             <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
               <path
                 stroke="#686868"
@@ -150,9 +155,37 @@
               />
             </svg>
           </div>
+          <!-- *------------  Feature mobile active state menu ------------------------- -->
+          <div
+            class="bg-[#eeeded] px-4 py-4 w-[150px] hidden"
+            id="feature-menu-mobile"
+          >
+            <ul class="flex flex-col gap-4 text-sm">
+              <div class="flex justify-start items-center gap-4">
+                <img src="images/icon-todo.svg" alt="Todo icon" />
+                <li><a href="">Todo List</a></li>
+              </div>
+              <div class="flex justify-start items-center gap-4">
+                <img src="images/icon-calendar.svg" alt="Calendar icon" />
+                <li><a href="">Calendar</a></li>
+              </div>
+              <div class="flex justify-start items-center gap-4">
+                <img src="images/icon-reminders.svg" alt="Reminders icon" />
+                <li><a href="">Reminders</a></li>
+              </div>
+              <div class="flex justify-start items-center gap-4">
+                <img src="images/icon-planning.svg" alt="Planning icon" />
+                <li><a href="">Planning</a></li>
+              </div>
+            </ul>
+          </div>
+
           <div>
-            <div class="flex justify-between items-baseline gap-4 w-[135px]">
-              <li><a href="">Company</a></li>
+            <div
+              class="flex justify-between items-baseline gap-4 w-[135px] cursor-pointer"
+              id="company-mobile"
+            >
+              <li>Company</li>
               <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
                 <path
                   stroke="#686868"
@@ -163,14 +196,23 @@
                 />
               </svg>
             </div>
+            <!-- ------------ Company mobile active state menu ------------------------- -->
+            <div
+              class="bg-[#eeeded] px-4 py-4 w-[150px] hidden"
+              id="company-menu-mobile"
+            >
+              <ul class="flex flex-col gap-4 text-sm">
+                <li class="mb-2"><a href="https://history.org">History</a></li>
+                <li class="mb-2"><a href="">Our Team</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
           </div>
-          <li><a href="">Career</a></li>
+          <li><a href="">Careers</a></li>
           <li><a href="">About</a></li>
         </ul>
 
-        <ul
-          class="mt-16 flex flex-col gap-4 justify-center items-center"
-        >
+        <ul class="mt-16 flex flex-col gap-4 justify-center items-center">
           <li><a href="">Login</a></li>
           <li class="w-full">
             <button
