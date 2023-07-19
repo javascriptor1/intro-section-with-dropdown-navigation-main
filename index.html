@@ -26,27 +26,80 @@
     </style>
   </head>
   <body>
-    <header class="flex p-4 pt-8 lg:p-8 lg:gap-12 items-center justify-between">
+    <header class="flex p-4 pt-8 lg:p-8 lg:gap-12 items-start justify-between">
       <div>
         <img src="images/logo.svg" alt="snap logo" class="" />
       </div>
       <nav class="hidden lg:flex">
         <ul class="flex gap-8 text-MediumGray font-bold">
-          <div class="flex items-baseline gap-1 hover:cursor-pointer">
+          <div
+            class="flex items-baseline gap-1 hover:cursor-pointer hover:text-black feature relative"
+          >
             <a href="">Features </a
-            ><img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
+            ><svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="#686868"
+                stroke-width="1.5"
+                fill="none"
+                d="m1 1 4 4 4-4"
+                class="arrow-down"
+              />
+            </svg>
+             <!-- ------------ Feature desktop active state menu ------------------------- -->
+             <div class="hidden absolute top-12 left-[-3rem] bg-[#eeeded] px-4 py-4 w-[150px]" id="feature-menu">
+              <ul class="flex flex-col gap-4">
+                <div class="flex justify-start items-center gap-4">
+                 <img src="images/icon-todo.svg" alt="Todo icon">
+                  <li><a href="">Todo List</a></li>
+                </div>
+                <div class="flex justify-start items-center gap-4">
+                 <img src="images/icon-calendar.svg" alt="Calendar icon">
+                  <li><a href="">Calendar</a></li>
+                </div>
+                <div class="flex justify-start items-center gap-4">
+                 <img src="images/icon-reminders.svg" alt="Reminders icon">
+                  <li><a href="">Reminders</a></li>
+                </div>
+                <div class="flex justify-start items-center gap-4">
+                 <img src="images/icon-planning.svg" alt="Planning icon">
+                  <li><a href="">Planning</a></li>
+                </div>
+               
+              </ul>
+            </div>
           </div>
-          <div class="flex items-baseline gap-1 hover:cursor-pointer">
+          <div
+            class="flex items-baseline gap-1 hover:cursor-pointer hover:text-black feature relative lg:min-h-[120px]"  
+          >
             <a href="">Company </a
-            ><img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
+            ><svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="#686868"
+                stroke-width="1.5"
+                fill="none"
+                d="m1 1 4 4 4-4"
+                class="arrow-down"
+              />
+            </svg>
+            <!-- ------------ Company desktop active state menu ------------------------- -->
+            <div class="hidden absolute top-10 bg-[#eeeded] px-4 py-4 w-[120px]" id="company-menu">
+              <ul class="">
+                <li class="mb-2"><a href="https://history.org">History</a></li>
+                <li class="mb-2"><a href="">Our Team</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
           </div>
+
           <a href="">Careers</a>
-          <a href="">About</a>
+          <a href="" class="hover:text-black">About</a>
         </ul>
       </nav>
       <ul class="ml-auto gap-8 hidden lg:flex text-MediumGray font-bold">
-        <a href="">Login</a>
-        <a href="" class="border-MediumGray border-2 rounded-lg py-2 px-4 -my-2"
+        <a href="" class="hover:text-black">Login</a>
+        <a
+          href=""
+          class="border-MediumGray border-2 rounded-lg py-2 px-4 -my-2 hover:text-black hover:border-black"
           >Register</a
         >
       </ul>
@@ -77,13 +130,13 @@
         <h1 class="text-3xl font-bold lg:text-6xl lg:mb-12 lg:mt-8">
           Make <br class="hidden lg:block" />remote work
         </h1>
-        <p class="mt-4 mb-8 lg:mb-12 lg:w-[75%] text-MediumGray">
+        <p class="mt-4 mb-8 lg:mb-12 lg:w-[75%] text-MediumGray lg:font-bold">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
         <a
           href=""
-          class="bg-black text-white rounded-xl py-2 px-4 lg:py-3 lg:px-6 font-bold"
+          class="bg-black text-white rounded-xl py-2 px-4 lg:py-3 lg:px-6 font-bold hover:bg-white hover:text-black hover:border-black hover:border-[1px]"
         >
           Learn more</a
         >
